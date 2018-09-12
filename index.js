@@ -149,13 +149,7 @@ function moveDodgerLeft() {
      window.requestAnimationFrame(moveDodgerLeft)
    }
 }
-   const left = positionToInteger(dodger.style.left)
-      moveDodgerLeft()
-      expect(positionToInteger(dodger.style.left)).toBeLessThan(left
-    it('does not move the DODGER left if the DODGER\'s left edge already touches the left edge of GAME', () => {
-      dodger.style.left = '0px'
-      moveDodgerLeft()
-      expect(dodger.style.left).toEqual('0px')
+
     
 
 function moveDodgerRight() {
