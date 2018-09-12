@@ -144,9 +144,9 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    var left = 180
-   dodger.style.left = `${left += 4}px`
+   dodger.style.left = `${left -= 4}px`
    
-   if (left > 180) {
+   if (left < 380) {
      window.requestAnimationFrame(moveDodgerLeft)
    }
 }
