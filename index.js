@@ -144,7 +144,7 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    
-  }
+  
 }
 
 function moveDodgerRight() {
