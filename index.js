@@ -143,6 +143,8 @@ function moveDodgerLeft() {
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
+   
+   
    DODGER.style.left = `${dodgerLeftEdge += 4}px`
    if (dodgerLeftEdge > 0) {
         window.requestAnimationFrame(moveRock)
