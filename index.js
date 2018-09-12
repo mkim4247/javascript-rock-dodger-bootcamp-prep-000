@@ -115,7 +115,10 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  
+  let peb = document.querySelectorAll('.rock')
+    for (let i = 0; i < peb.length; i++) {
+    peb[i].remove()
+}
   GAME.removeEventListener('keydown', moveDodger);
   alert("YOU LOSE!");
 }
