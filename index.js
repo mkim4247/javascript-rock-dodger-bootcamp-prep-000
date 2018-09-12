@@ -115,7 +115,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  var peb = document.getElementsByClassName('rock');
+  var peb = GAME.getElementsByClassName('rock');
   peb.remove()
   GAME.removeEventListener('keydown', moveDodger);
   alert("YOU LOSE!");
