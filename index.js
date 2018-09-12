@@ -146,7 +146,7 @@ function moveDodgerLeft() {
    
    
    DODGER.style.left = `${dodgerLeftEdge += 4}px`
-   if (dodgerLeftEdge > 0) {
+   if (DODGER.style.left > 0) {
         window.requestAnimationFrame(moveRock)
    }
 }
