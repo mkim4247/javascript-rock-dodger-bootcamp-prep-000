@@ -114,7 +114,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  clearInterval(gameInterval);
+  
   var peb = GAME.getElementsByClassName('rock');
   peb.remove()
   GAME.removeEventListener('keydown', moveDodger);
