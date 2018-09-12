@@ -148,23 +148,12 @@ function moveDodgerLeft() {
     DODGER.style.left = `${left -= 4}px`
     
     function step() {
-      var shiftL
+      var shiftL = 
     }
     if (DODGER.style.left > 0) {
      window.requestAnimationFrame(moveDodgerLeft)
    }
 }
-
-function step(timestamp) {
-  if (!start) start = timestamp;
-  var progress = timestamp - start;
-  element.style.left = Math.min(progress / 10, 200) + 'px';
-  if (progress < 2000) {
-    window.requestAnimationFrame(step);
-  }
-}
-
-window.requestAnimationFrame(step);
       
 function moveDodgerRight() {
   // implement me!
