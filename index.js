@@ -144,13 +144,19 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    
-   DODGER.style.left = `${DODGER.style.left -= 4}px`
-   
-   if (DODGER.style.left < 360) {
+   const left = `${DODGER.style.left += 4}px`
+   if (left < 360) {
      window.requestAnimationFrame(moveDodgerLeft)
    }
 }
-
+   const left = positionToInteger(dodger.style.left)
+      moveDodgerLeft()
+      expect(positionToInteger(dodger.style.left)).toBeLessThan(left
+    it('does not move the DODGER left if the DODGER\'s left edge already touches the left edge of GAME', () => {
+      dodger.style.left = '0px'
+      moveDodgerLeft()
+      expect(dodger.style.left).toEqual('0px')
+    
 
 function moveDodgerRight() {
   // implement me!
